@@ -6,7 +6,7 @@ import org.testng.asserts.SoftAssert;
 
 public class Day18_Assertions {
 
-    @Test
+    @Test(groups = "regression1")
     public void hardAssertion(){
 
         System.out.println("Starting the test case");
@@ -30,7 +30,7 @@ public class Day18_Assertions {
         System.out.println("line 30");  // will not run
     }
 
-    @Test
+    @Test(groups = "regression1")
     public void hardAssert2(){
         System.out.println("line35");
         assert  6>4;

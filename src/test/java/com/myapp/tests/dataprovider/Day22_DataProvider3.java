@@ -14,6 +14,7 @@ public class Day22_DataProvider3 {
     @Test(dataProvider = "customerDataProvider",dataProviderClass = DataProviderUtils.class)
     public void customerLoginTest(String username, String pass){
         Driver.getDriver().get(ConfigReader.getProperty("blue_rental_home"));
+        WaitUtils.waitFor(1);
         rentalHomePage.login.click();
         WaitUtils.waitFor(1);
         rentalLoginPage.email.sendKeys(username);
@@ -30,6 +31,6 @@ public class Day22_DataProvider3 {
         WaitUtils.waitFor(1);
         rentalHomePage.ok.click();
         WaitUtils.waitFor(1);
-    //Driver.closeDriver();
+        Driver.closeDriver();
     }
 }

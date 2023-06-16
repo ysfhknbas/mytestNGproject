@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test verbose="2" preserve-order="true"
+          name="C:/Users/yusuf/IdeaProjects/mytestNGproject/src/test/java/com/myapp/tests/smoketestsuite/logintests">
+        <classes>
+            <class name="com.myapp.tests.smoketestsuite.logintests.Day20_BadLogin">
+                <methods>
+                    <include name="badLogin"/>
+                </methods>
+            </class>
+            <class name="com.myapp.tests.smoketestsuite.logintests.Day20_NegativeLogin">
+                <methods>
+                    <include name="negativeLogin"/>
+                </methods>
+            </class>
+            <class name="com.myapp.tests.smoketestsuite.logintests.Day20_PositiveLogin">
+                <methods>
+                    <include name="adminLogin"/>
+                </methods>
+            </class>
+            <class name="com.myapp.tests.smoketestsuite.logintests.excelautomation.Day21_ExcelLogin">
+                <methods>
+                    <include name="customerLoginTest"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>

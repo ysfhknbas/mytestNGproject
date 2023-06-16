@@ -17,7 +17,7 @@ public class OrangeHRMLoginPage {
     public WebElement username;
     @FindBy(xpath = "//input[@type='password']")
     public WebElement password;
-    @FindBy(xpath = "//input[@type='submit']")
+    @FindBy(xpath = "//button[@type='submit']")
     public WebElement submitButton;
 
 

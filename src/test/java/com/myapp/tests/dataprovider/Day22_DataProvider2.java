@@ -42,7 +42,7 @@ public class Day22_DataProvider2 {
 
             Driver.getDriver().get("https://google.com");
             Driver.getDriver().findElement(By.name("q")).sendKeys(data, Keys.ENTER);
-            Assert.assertTrue(Driver.getDriver().getTitle().contains(data));
+            Assert.assertFalse(Driver.getDriver().getTitle().contains(data));
             Driver.closeDriver();
     }
 
